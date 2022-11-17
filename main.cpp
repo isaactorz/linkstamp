@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "linkstamp.hpp"
+
 int main() {
-    std::cout << "Hello World!" << std::endl;
+    std::cout << kTimeUnix << std::endl;
 }

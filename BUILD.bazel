@@ -1,4 +1,11 @@
+cc_library(
+    name = "linkstamp",
+    hdrs = ["linkstamp.hpp"],
+    linkstamp = "linkstamp.cpp"
+)
+
 cc_binary(
     name = "main",
     srcs = ["main.cpp"],
+    deps = [":linkstamp"],
 )
